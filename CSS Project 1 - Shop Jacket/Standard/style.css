@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding: 30px;
+    align-items: center;
+}
+
+nav h4 {
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+nav i {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+#left {
+    padding: 3% 12%;
+}
+
+#left-top h1 {
+    font-size: 5.6vw;
+    font-weight: 500;
+}
+
+#left-bottom p {
+    width: 55%;
+    padding: 7% 0;
+    font-size: 2.9vh;
+    line-height: 5vh;
+    /* background-color: green; */
+}
+
+#center {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 98vh;
+}
+
+#content {
+    width: 100%;
+    /* background-color: green; */
+}
+
+.elem {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #4f4f4f;
+    padding: 7% 0;
+}
+
+.elem a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-size: 3.1vh;
+}
+
+.elem i {
+    font-size: 2.9vh;
+    opacity: 0;
+}
+
+#right {
+    /* background-color: red; */
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    padding: 0 18% 10% 9%;
+}
+
+
+.elem a:hover {
+    color: black;
+    text-decoration: underline #4f4f4f;
+}
+
+.elem a:hover+i {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+}
