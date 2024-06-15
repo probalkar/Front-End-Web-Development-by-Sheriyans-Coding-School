@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#nav{
+    padding: 2%;
+}
+
+#top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chashma{
+    display: flex;
+    align-items: center;
+}
+
+.gola{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#line{
+    width: 1px;
+    height: 4px;
+    background-color: black;
+}
+
+#nav-1{
+    display: flex;
+    width: 40%;
+    gap: 6%;
+    justify-content: end;
+    font-size: 2vh;
+}
+
+#nav-1 span{
+    padding-left: 15px;
+    color: rgb(130, 130, 130);
+}
+
+#nav-1 h4{
+    font-weight: 500;
+}
+
+#nav-2{
+    display: flex;
+    padding-top: 2%;
+    font-size: 2vh;
+}
+
+#nav-2 h4{
+    padding-right: 6%;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+main{
+    height: calc(90% - 57px);
+    width: 100%;
+}
+
+#center{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+#center::-webkit-scrollbar{
+    background-color: transparent;
+    height: 1vh;
+}
+
+#center::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+
+#text-slide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#text-slide .slide{
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    flex-shrink: 0;
+    
+}
+
+#text-slide .slide .text{
+    display: grid;
+    grid-template-columns: 5% 15%;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+    padding-right: 35%;
+}
+
+#text-slide .slide .text .right h4, h1{
+    font-weight: 100;
+}
+
+#text-slide .slide .text .right h1{
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 6vw;
+}
+
+#text-slide .slide .text .right h4{
+    color: rgb(130, 130, 130);
+}
+
+#images{
+    display: flex;
+    width: 100%;
+    height: 65%;
+    overflow-x: auto;
+}
+
+#images::-webkit-scrollbar{
+    display: none;
+}
+
+#images img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 25%;
+}
